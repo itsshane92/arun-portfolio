@@ -645,7 +645,7 @@ pre {
       max-width: 100%; } }
   @media (min-width: 1200px) {
     .container {
-      width: 1140px;
+      width: 1024px;
       max-width: 100%; } }
 
 .container-fluid {
