@@ -645,8 +645,13 @@ pre {
       max-width: 100%; } }
   @media (min-width: 1200px) {
     .container {
-      width: 1024px;
-      max-width: 100%; } }
+      width: 960px;
+      max-width: 100%; } 
+      /* .portfolio-des{
+        width: 800px;
+      } */
+    
+    }
 
 .container-fluid {
   position: relative;
