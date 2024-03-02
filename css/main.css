@@ -5026,11 +5026,11 @@ main.no-banner {
 .text-block .text-block-title {
 	display: block;
 	margin-bottom: 1.5rem;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	color: #0F0F0F;
-	letter-spacing: 0.095rem;
+	letter-spacing: 0.055rem;
 }
 
 .text-block p {
