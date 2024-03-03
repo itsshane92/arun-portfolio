@@ -12012,7 +12012,7 @@ a.full-width-icon:hover .social-text {
 		min-width: 16.88rem;
 	}
 
-	> .main-header .i-list.i-list-i-block.i-list-i-block-sm li:first-child a {
+	 .main-header .i-list.i-list-i-block.i-list-i-block-sm li:first-child a {
 		padding-left: 0;
 	}
 
@@ -12970,9 +12970,9 @@ a.full-width-icon:hover .social-text {
 	}
 
 	.content-slot .bg-stretch img {
-		margin: 0 !important !important;
-		width: 100% !important !important;
-		height: auto !important !important;
+		margin: 0 !important;
+		width: 100% !important;
+		height: auto !important;
 	}
 
 	.content-slot .img-wrap {
