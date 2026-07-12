@@ -1,0 +1,2 @@
+/* Explicit component colors prevent global heading/strong styles from leaking into dark surfaces. */
+.ops-problem{color:#f7f8fb}.ops-problem h2,.ops-problem .text-block-title,.ops-problem strong{color:#fff!important}.ops-problem p{color:#d9dce5}.ops-problem .case-study-eyebrow{color:#a59eff!important}
