@@ -39,10 +39,14 @@
     var toc=document.querySelector('.case-study-toc');
     var study=document.querySelector('.portfolio-des');
     if(toc&&study){
-      var studyRect=study.getBoundingClientRect();
-      var tocBottom=115+toc.offsetHeight;
-      var insideStudy=studyRect.top<window.innerHeight-80&&studyRect.bottom>tocBottom+32;
-      toc.style.display=insideStudy?'block':'none';
+      if(window.matchMedia('(max-width: 1250px)').matches){
+        toc.style.display='none';
+      }else{
+        var studyRect=study.getBoundingClientRect();
+        var tocBottom=115+toc.offsetHeight;
+        var insideStudy=studyRect.top<window.innerHeight-80&&studyRect.bottom>tocBottom+32;
+        toc.style.display=insideStudy?'block':'none';
+      }
     }
     var links=[].slice.call(document.querySelectorAll('.case-study-toc a'));
     var current='';
@@ -50,5 +54,6 @@
     links.forEach(function(link){link.classList.toggle('active',link.hash===current);});
   }
   window.addEventListener('scroll',update,{passive:true});
+  window.addEventListener('resize',update,{passive:true});
   update();
 }());
