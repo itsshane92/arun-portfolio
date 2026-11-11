@@ -25,39 +25,33 @@
     <link media="all" rel="stylesheet" href="css/main.css">
     <link media="all" rel="stylesheet" href="css/case-study.css">
     <link media="all" rel="stylesheet" href="css/operations-case-study.css">
+    <link media="all" rel="stylesheet" href="css/showcase.css">
     <link media="all" rel="stylesheet" href="css/accessibility-fixes.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link media="all" rel="stylesheet" href="css/case-lead.css">
+    <link media="all" rel="stylesheet" href="css/case-variants.css">
+</head>
 
-<body>
+<body class="cs-index">
     <!-- main wrapper --> 
     <div id="wrapper">
         <div class="page-wrapper">
             <!-- header of the page -->
-            <header class="fixed-top main-header header-white no-top-header" id="waituk-main-header">
-                <div id="nav-section">
-                    <div class="bottom-header container-fluid mega-menus" id="mega-menus">
-                        <nav class="navbar navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
-                            <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#mega-menu">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html" style="font-size: 24px;
-                            font-weight: 700;"> AK </a>
-                            <div class="collapse navbar-collapse flex-row-reverse" id="mega-menu">
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <a href="index.html#intro"> Home </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#featureprojects"> Portfolio </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#contactdetails"> Contact </a>
-                                    </li>
-                                </ul>
-                            </div>
-                           
-                        </nav>
-                    </div>
+            <header class="site-nav" id="siteNav">
+                <div class="ln-wrap nav-inner">
+                    <a class="brand" href="index.html" aria-label="Arun Kumar — home">
+                        <span class="brand-mark">AK</span>
+                        <span class="brand-text"><strong>Arun Kumar</strong><span>Lead Product Designer</span></span>
+                    </a>
+                    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html#featureprojects">Work</a></li>
+                        <li><a href="index.html#approach">Approach</a></li>
+                        <li><a href="index.html#expertise">Expertise</a></li>
+                        <li><a class="ln-btn" href="#contactdetails">Let’s talk</a></li>
+                    </ul>
                 </div>
             </header>
             <!--/header of the page -->
@@ -78,11 +72,16 @@
                                 <div><h2>Core challenge</h2><p>Automate confident matches while keeping ambiguous and high-risk decisions controllable</p></div>
                             </div>
                         </div>
+                        <div class="container case-study-impact" aria-label="Impact at a glance">
+                            <h2 class="impact-title">At a glance</h2>
+                            <div class="impact-grid"><div class="impact-tile"><em>PRD target</em><strong>97%</strong><span>Documents auto-tagged to an order item</span></div><div class="impact-tile"><em>PRD target</em><strong>98%+</strong><span>Tagged to the correct order item</span></div><div class="impact-tile"><em>PRD target</em><strong>&lt;2%</strong><span>Documents needing a manual unlink</span></div></div>
+                            <p class="impact-note">Targets set with the product team. Live results will be added after rollout.</p>
+                        </div>
                         <div class="container">
                             <div class="row portfolio-gallery">
                                 <div class="col-lg-6">
                                     <div class="img-block shine-effect image-zoom">
-                                        <img src="img/lab-report-pooling-cover.png" alt="Lab Report Pooling RPA workflow overview">
+                                        <img src="img/rpa-showcase-cover.png" alt="Lab Report Pooling RPA console showcase with inbox and QC review screens">
                                     </div>
                                 </div>
                                 <div class="v-align-col col-lg-5 offset-lg-1">
@@ -206,6 +205,24 @@
             <p>The system also records auto versus manual links, merged-document lineage, QC count by agent, unlink events, test-name matching accuracy and agent-level productivity.</p>
         </div>
 
+        <div class="col-lg-12 text-block bottom-space showcase-section" id="visual-design">
+            <span class="case-study-eyebrow">High-fidelity visual design</span>
+            <h2 class="text-block-title">An operations console that stays quiet until something needs a human</h2>
+            <p class="showcase-intro">I redesigned the core agent workflow as a showcase set on the Mira Pro admin system: neutral surfaces, one blue accent and evidence placed next to every decision — OCR confidence beside extracted fields, match scores beside suggested orders, and SKU coverage beside merge.</p>
+            <ul class="showcase-pills"><li>7 desktop screens</li><li>1440 × 1024</li><li>Mira Pro admin system</li><li>Single accent #1565C0</li><li>Inter</li></ul>
+            <figure class="showcase-cover"><img width="1920" height="1080" src="img/rpa-showcase-cover.png" alt="RPA lab reports console showcase with overview dashboard and QC review screens" loading="lazy"><figcaption>Showcase cover: overview dashboard, QC review and the merge confirmation.</figcaption></figure>
+            <ul class="showcase-gallery showcase-gallery--desktop">
+                <li><figure><a class="fancybox-thumb" href="img/rpa-screen-01.png" data-thumbnail="img/rpa-screen-01.png" title="Operations overview"><img width="1440" height="1024" src="img/rpa-screen-01.png" alt="Pipeline, digitisation quality, weekly throughput and agent leaderboard" loading="lazy"></a><figcaption><strong>01 · Operations overview</strong>KPIs and pipeline at a glance</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/rpa-screen-02.png" data-thumbnail="img/rpa-screen-02.png" title="Lab reports inbox"><img width="1440" height="1024" src="img/rpa-screen-02.png" alt="Inbox with status tabs, confidence bars, assign chips and a bulk action bar" loading="lazy"></a><figcaption><strong>02 · Lab reports inbox</strong>Status tabs and bulk assign</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/rpa-screen-03.png" data-thumbnail="img/rpa-screen-03.png" title="Assign agent"><img width="1440" height="1024" src="img/rpa-screen-03.png" alt="Assign drawer with best-match agent, workload bars and QC accuracy" loading="lazy"></a><figcaption><strong>03 · Assign agent</strong>Workload-aware assignment</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/rpa-screen-04.png" data-thumbnail="img/rpa-screen-04.png" title="Link workspace"><img width="1440" height="1024" src="img/rpa-screen-04.png" alt="Report preview with OCR field boxes, extracted data and order suggestions with match scores" loading="lazy"></a><figcaption><strong>04 · Link workspace</strong>OCR evidence beside suggestions</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/rpa-screen-05.png" data-thumbnail="img/rpa-screen-05.png" title="QC review"><img width="1440" height="1024" src="img/rpa-screen-05.png" alt="QC review with reference-range bars and a CNH SKU to digitised test checklist" loading="lazy"></a><figcaption><strong>05 · QC review</strong>SKU-to-test matching</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/rpa-screen-06.png" data-thumbnail="img/rpa-screen-06.png" title="Report merged"><img width="1440" height="1024" src="img/rpa-screen-06.png" alt="Merged success modal with QC stats and the next report" loading="lazy"></a><figcaption><strong>06 · Report merged</strong>Merge, then straight to next</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/rpa-screen-07.png" data-thumbnail="img/rpa-screen-07.png" title="Order item"><img width="1440" height="1024" src="img/rpa-screen-07.png" alt="Order item detail with report rows, SKU coverage and activity timeline" loading="lazy"></a><figcaption><strong>07 · Order item</strong>Lineage and audit timeline</figcaption></figure></li>
+            </ul>
+            <div class="showcase-principles"><div><strong>Evidence beside the decision</strong><p>Confidence, match score and SKU coverage sit next to the action they justify.</p></div><div><strong>Status without colour noise</strong><p>One accent plus labels and marks — no red/amber/green dashboard.</p></div><div><strong>Momentum by default</strong><p>After merge, the next report is one click away.</p></div></div>
+        </div>
+
         <div class="col-lg-12 text-block bottom-space">
             <h2 class="text-block-title">Trade-off and next validation</h2>
             <p>Pooling improves throughput, but manual test verification becomes cumulative: the system cannot always identify which source document produced a manually verified test. I would validate this trade-off with operations and compliance teams, monitor correction patterns, and test whether document-level provenance needs to remain accessible after merge.</p>
@@ -227,46 +244,31 @@
         </section>
         <nav class="container case-study-next" aria-label="Other case studies"><a href="project1.html">&#8592; Previous case study</a><a href="index.html#featureprojects">All projects</a><a href="project3.html">Next case study &#8594;</a></nav>
 
-        <!-- footer of the page -->
-        <footer class="footer footer-v1" id="contactdetails">
-            <div class="content-block footer-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <ul class="social-network with-text">
-                                <li><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank"><span class="icon-linkedin"></span></a></li>
-                                <li><a href="https://www.behance.net/itsshane92" target="_blank"><span class="icon-behance"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-nav inline-nav text-center">
-                                <ul>
-                                    <li><a href="index.html#intro">Home</a></li>
-                                    <li><a href="index.html#featureprojects">portfolio</a></li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-logo text-right">
-                               <h3 class="text-white">AK</h3>
-                            </div>
-                        </div>
+        <section class="ln-contact" id="contactdetails">
+            <div class="ln-wrap">
+                <div class="ln-contact-card">
+                    <div>
+                        <span class="eyebrow">Let’s talk</span>
+                        <h2>Have a complex product that needs clarity?</h2>
+                        <p>I’m always happy to talk about design leadership, healthcare products and design systems.</p>
+                    </div>
+                    <div class="ln-actions">
+                        <a class="ln-primary" href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">Message on LinkedIn</a>
+                        <a class="ln-ghost" href="https://www.behance.net/itsshane92" target="_blank" rel="noopener">View Behance</a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom text-center">
-                <div class="container">
-                    <p>Copyright 2023 - Arun Kumar </p>
+                <div class="ln-footer">
+                    <span>© 2026 Arun Kumar · Lead Product Designer</span>
+                    <nav aria-label="Footer"><a href="index.html#featureprojects">Work</a><a href="index.html#approach">Approach</a><a href="index.html#expertise">Expertise</a><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">LinkedIn</a></nav>
                 </div>
             </div>
-        </footer>
+        </section>
         <!--/footer of the page -->
     </div>
      <!-- search form wrapper -->
     
 
-    <a href="#" class="section-scroll" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    <a href="#" class="section-scroll" id="scroll-to-top" aria-label="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     <!-- jquery library -->
     <script src="vendors/jquery/jquery-2.1.4.min.js"></script>
     <!-- external scripts -->
@@ -289,6 +291,11 @@
     <!-- custom jquery script -->
     <script src="js/jquery.main.js"></script>
     <script src="js/case-study.js"></script>
+    <script>
+    (function(){var nav=document.getElementById('siteNav'),btn=document.getElementById('navToggle');if(!nav||!btn)return;
+    btn.addEventListener('click',function(){var o=nav.classList.toggle('is-open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close menu':'Open menu');});
+    var s=function(){nav.classList.toggle('is-scrolled',window.scrollY>8);};s();window.addEventListener('scroll',s,{passive:true});})();
+    </script>
 </body>
 
 </html>

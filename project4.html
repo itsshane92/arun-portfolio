@@ -25,41 +25,32 @@
     <link media="all" rel="stylesheet" href="css/main.css">
     <link media="all" rel="stylesheet" href="css/case-study.css">
     <link media="all" rel="stylesheet" href="css/cmp-case-study.css">
-    </head>
+    <link media="all" rel="stylesheet" href="css/showcase.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link media="all" rel="stylesheet" href="css/case-lead.css">
+    <link media="all" rel="stylesheet" href="css/case-variants.css">
+</head>
 
-<body>
+<body class="cs-classic">
     <!-- main wrapper --> 
     <div id="wrapper">
         <div class="page-wrapper">
             <!-- header of the page -->
-            <header class="fixed-top main-header header-white no-top-header" id="waituk-main-header">
-                <div id="nav-section">
-                    <div class="bottom-header container-fluid mega-menus" id="mega-menus">
-                        <nav class="navbar navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
-                            <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#mega-menu">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html" style="font-size: 24px;
-                            font-weight: 700;"> AK </a>
-                            <div class="collapse navbar-collapse flex-row-reverse" id="mega-menu">
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <a href="index.html#intro"> Home </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#featureprojects"> Portfolio </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#contactdetails"> Contact </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="navbar-pos-search">
-                                <a href="#" class="x-search x-search-trigger navbar-link"><i class="custom-icon-search"></i></a>
-                                <a href="#" class="x-search icon-close-round navbar-link"><i class="icon-line-cross"></i></a>
-                            </div>
-                        </nav>
-                    </div>
+            <header class="site-nav" id="siteNav">
+                <div class="ln-wrap nav-inner">
+                    <a class="brand" href="index.html" aria-label="Arun Kumar — home">
+                        <span class="brand-mark">AK</span>
+                        <span class="brand-text"><strong>Arun Kumar</strong><span>Lead Product Designer</span></span>
+                    </a>
+                    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html#featureprojects">Work</a></li>
+                        <li><a href="index.html#approach">Approach</a></li>
+                        <li><a href="index.html#expertise">Expertise</a></li>
+                        <li><a class="ln-btn" href="#contactdetails">Let’s talk</a></li>
+                    </ul>
                 </div>
             </header>
             <!--/header of the page -->
@@ -80,11 +71,16 @@
                                 <div><h2>Core challenge</h2><p>Balance member choice, commercial conversion and clinical safety across a branching journey</p></div>
                             </div>
                         </div>
+                        <div class="container case-study-impact" aria-label="Impact at a glance">
+                            <h2 class="impact-title">At a glance</h2>
+                            <div class="impact-grid"><div class="impact-tile"><em>Model</em><strong>2 care tracks</strong><span>Lifestyle and Clinical, with different promises</span></div><div class="impact-tile"><em>Safety</em><strong>Hard gate</strong><span>Medicated members routed to clinical care</span></div><div class="impact-tile"><em>Scope</em><strong>End to end</strong><span>Discovery, enrolment, onboarding and active care</span></div></div>
+                            <p class="impact-note">Instrumentation is defined in the PRDs. Live results will be added after launch.</p>
+                        </div>
                         <div class="container">
                             <div class="row portfolio-gallery">
                                 <div class="col-lg-6">
                                     <div class="img-block shine-effect image-zoom">
-                                        <img src="img/cmp-case-study-cover.png" alt="Care Management Program pre- and post-enrolment experience">
+                                        <img src="img/cmp-showcase-cover.png" alt="Care Management Program high-fidelity showcase with programme detail, home and dashboard screens">
                                     </div>
                                 </div>
                                 <div class="v-align-col col-lg-5 offset-lg-1">
@@ -219,6 +215,26 @@
             <div class="cmp-metrics"><div class="cmp-metric"><strong>Discovery → detail</strong><span>Entry-point and programme relevance</span></div><div class="cmp-metric"><strong>Track selection</strong><span>Lifestyle/Clinical mix and safety-gate hits</span></div><div class="cmp-metric"><strong>Plan customisation</strong><span>Service and device attach rate</span></div><div class="cmp-metric"><strong>Onboarding completion</strong><span>Drop-off by HRA, scan, tracker and lab step</span></div><div class="cmp-metric"><strong>Eligibility outcome</strong><span>Late-stage ineligibility and recovery choice</span></div><div class="cmp-metric"><strong>Plan Active</strong><span>Successful activation by programme and track</span></div></div>
         </div>
 
+        <div class="col-lg-12 text-block bottom-space showcase-section" id="visual-design">
+            <span class="case-study-eyebrow">High-fidelity visual design</span>
+            <h2 class="text-block-title">A calm, single-accent visual language for a clinical journey</h2>
+            <p class="showcase-intro">Once the product model was stable, I redesigned the key moments of the journey as a showcase set: one blue accent, neutral surfaces, real photography and plain-language status. Colour is never the only signal — every state also carries a label, icon or progress cue.</p>
+            <ul class="showcase-pills"><li>9 mobile screens</li><li>375 × 812</li><li>Single accent #0E63FF</li><li>Euclid Circular A</li><li>CNH icon library</li></ul>
+            <figure class="showcase-cover"><img width="1920" height="1080" src="img/cmp-showcase-cover.png" alt="Care Management Program showcase: programme detail, home and programme dashboard screens on phones with floating care-team, meal plan and CGM cards" loading="lazy"><figcaption>Showcase cover: recommendation, programme detail and the active programme dashboard.</figcaption></figure>
+            <ul class="showcase-gallery showcase-gallery--mobile">
+                <li><figure><a class="fancybox-thumb" href="img/cmp-screen-01.png" data-thumbnail="img/cmp-screen-01.png" title="Home — health programs"><img width="375" height="812" src="img/cmp-screen-01.png" alt="Home screen with health risk score ring and a recommended Diabetes Remission programme card" loading="lazy"></a><figcaption><strong>01 · Home</strong>HRA score and a matched programme</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/cmp-screen-02.png" data-thumbnail="img/cmp-screen-02.png" title="Care programs listing"><img width="375" height="812" src="img/cmp-screen-02.png" alt="Programme listing with match percentage bars and the lab value behind each recommendation" loading="lazy"></a><figcaption><strong>02 · Listing</strong>Match % with the reason shown</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/cmp-screen-03.png" data-thumbnail="img/cmp-screen-03.png" title="Programme detail"><img width="375" height="812" src="img/cmp-screen-03.png" alt="Diabetes Remission detail with member values, expected results and care team portraits" loading="lazy"></a><figcaption><strong>03 · Programme detail</strong>Why it was recommended, in numbers</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/cmp-screen-04.png" data-thumbnail="img/cmp-screen-04.png" title="Choose plan"><img width="375" height="812" src="img/cmp-screen-04.png" alt="Enrolment step one with family member chips and Clinical versus Lifestyle option cards" loading="lazy"></a><figcaption><strong>04 · Choose plan</strong>Members and care track</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/cmp-screen-05.png" data-thumbnail="img/cmp-screen-05.png" title="Review and pay"><img width="375" height="812" src="img/cmp-screen-05.png" alt="Review screen with vitals tracker add-on, company-paid payment summary and consent" loading="lazy"></a><figcaption><strong>05 · Review &amp; pay</strong>Company-paid split made explicit</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/cmp-screen-06.png" data-thumbnail="img/cmp-screen-06.png" title="Enrolment confirmed"><img width="375" height="812" src="img/cmp-screen-06.png" alt="Enrolment confirmed with care team avatars and three numbered next steps" loading="lazy"></a><figcaption><strong>06 · Confirmed</strong>Clear next steps, not a dead end</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/cmp-screen-07.png" data-thumbnail="img/cmp-screen-07.png" title="Onboarding question"><img width="375" height="812" src="img/cmp-screen-07.png" alt="Onboarding step two of eight asking how long the member has had elevated blood sugar" loading="lazy"></a><figcaption><strong>07 · Onboarding</strong>One question at a time</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/cmp-screen-08.png" data-thumbnail="img/cmp-screen-08.png" title="Upload lab report"><img width="375" height="812" src="img/cmp-screen-08.png" alt="Optional lab report upload with dropzone and selectable recent reports" loading="lazy"></a><figcaption><strong>08 · Lab report</strong>Reuse recent reports, skip repeat tests</figcaption></figure></li>
+                <li><figure><a class="fancybox-thumb" href="img/cmp-screen-09.png" data-thumbnail="img/cmp-screen-09.png" title="Programme dashboard"><img width="375" height="812" src="img/cmp-screen-09.png" alt="Programme dashboard with day 12 of 90 progress, next lab test, vitals, meal plan and care manager" loading="lazy"></a><figcaption><strong>09 · Dashboard</strong>Programme clock and next action</figcaption></figure></li>
+            </ul>
+            <div class="showcase-principles"><div><strong>One accent, many signals</strong><p>Blue marks action and progress; status always pairs with text or an icon.</p></div><div><strong>Evidence before the ask</strong><p>Match % and the member's own values appear before price and enrol.</p></div><div><strong>Real people, real care</strong><p>Care-team portraits and photography make a long commitment feel human.</p></div></div>
+        </div>
+
         <div class="col-lg-12 text-block bottom-space">
             <h2 class="text-block-title">Reflection</h2>
             <p>The most important design contribution was not producing more screens; it was giving the programme a coherent model. Once condition, track, eligibility, profiling, baseline and active care were separated, the team could make safer decisions, divide implementation into independent parts and communicate the programme honestly to members.</p>
@@ -239,46 +255,31 @@
         </section>
         <nav class="container case-study-next" aria-label="Other case studies"><a href="project3.html">&#8592; Previous case study</a><a href="index.html#featureprojects">All projects</a><a href="project5.html">Next case study &#8594;</a></nav>
 
-        <!-- footer of the page -->
-        <footer class="footer footer-v1" id="contactdetails">
-            <div class="content-block footer-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <ul class="social-network with-text">
-                                <li><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank"><span class="icon-linkedin"></span></a></li>
-                                <li><a href="https://www.behance.net/itsshane92" target="_blank"><span class="icon-behance"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-nav inline-nav text-center">
-                                <ul>
-                                    <li><a href="index.html#intro">Home</a></li>
-                                    <li><a href="index.html#featureprojects">portfolio</a></li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-logo text-right">
-                               <h3 class="text-white">AK</h3>
-                            </div>
-                        </div>
+        <section class="ln-contact" id="contactdetails">
+            <div class="ln-wrap">
+                <div class="ln-contact-card">
+                    <div>
+                        <span class="eyebrow">Let’s talk</span>
+                        <h2>Have a complex product that needs clarity?</h2>
+                        <p>I’m always happy to talk about design leadership, healthcare products and design systems.</p>
+                    </div>
+                    <div class="ln-actions">
+                        <a class="ln-primary" href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">Message on LinkedIn</a>
+                        <a class="ln-ghost" href="https://www.behance.net/itsshane92" target="_blank" rel="noopener">View Behance</a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom text-center">
-                <div class="container">
-                    <p>Copyright 2023 - Arun Kumar </p>
+                <div class="ln-footer">
+                    <span>© 2026 Arun Kumar · Lead Product Designer</span>
+                    <nav aria-label="Footer"><a href="index.html#featureprojects">Work</a><a href="index.html#approach">Approach</a><a href="index.html#expertise">Expertise</a><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">LinkedIn</a></nav>
                 </div>
             </div>
-        </footer>
+        </section>
         <!--/footer of the page -->
     </div>
      <!-- search form wrapper -->
    
 
-    <a href="#" class="section-scroll" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    <a href="#" class="section-scroll" id="scroll-to-top" aria-label="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     <!-- jquery library -->
     <script src="vendors/jquery/jquery-2.1.4.min.js"></script>
     <!-- external scripts -->
@@ -301,6 +302,11 @@
     <!-- custom jquery script -->
     <script src="js/jquery.main.js"></script>
     <script src="js/case-study.js"></script>
+    <script>
+    (function(){var nav=document.getElementById('siteNav'),btn=document.getElementById('navToggle');if(!nav||!btn)return;
+    btn.addEventListener('click',function(){var o=nav.classList.toggle('is-open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close menu':'Open menu');});
+    var s=function(){nav.classList.toggle('is-scrolled',window.scrollY>8);};s();window.addEventListener('scroll',s,{passive:true});})();
+    </script>
 </body>
 
 </html>

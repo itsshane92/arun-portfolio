@@ -25,37 +25,31 @@
     <link media="all" rel="stylesheet" href="css/main.css">
     <link media="all" rel="stylesheet" href="css/case-study.css">
     <link media="all" rel="stylesheet" href="css/smart-report-case-study.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link media="all" rel="stylesheet" href="css/case-lead.css">
+    <link media="all" rel="stylesheet" href="css/case-variants.css">
+</head>
 
-<body>
+<body class="cs-spot">
     <!-- main wrapper --> 
     <div id="wrapper">
         <div class="page-wrapper">
             <!-- header of the page -->
-            <header class="fixed-top main-header header-white no-top-header" id="waituk-main-header">
-                <div id="nav-section">
-                    <div class="bottom-header container-fluid mega-menus" id="mega-menus">
-                        <nav class="navbar navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
-                            <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#mega-menu">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html" style="font-size: 24px;
-                            font-weight: 700;"> AK </a>
-                            <div class="collapse navbar-collapse flex-row-reverse" id="mega-menu">
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <a href="index.html#intro"> Home </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#featureprojects"> Portfolio </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#contactdetails"> Contact </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+            <header class="site-nav" id="siteNav">
+                <div class="ln-wrap nav-inner">
+                    <a class="brand" href="index.html" aria-label="Arun Kumar — home">
+                        <span class="brand-mark">AK</span>
+                        <span class="brand-text"><strong>Arun Kumar</strong><span>Lead Product Designer</span></span>
+                    </a>
+                    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html#featureprojects">Work</a></li>
+                        <li><a href="index.html#approach">Approach</a></li>
+                        <li><a href="index.html#expertise">Expertise</a></li>
+                        <li><a class="ln-btn" href="#contactdetails">Let’s talk</a></li>
+                    </ul>
                 </div>
             </header>
             <!--/header of the page -->
@@ -64,7 +58,8 @@
                 <!-- main content wrapper -->
                 <div class="content-wrapper">
                     <section class="content-block">
-                        <div class="container text-center bottom-space case-study-hero">
+                        <div class="cs-band">
+<div class="container text-center bottom-space case-study-hero">
                             <span class="case-study-eyebrow">Product design case study</span>
                             <h1>From lab values to safe, actionable health interpretation</h1>
                             <p class="case-study-deck">A responsive health report that turns clinical data into structured, understandable and actionable information.</p>
@@ -75,6 +70,12 @@
                                 <div><h2>Primary users</h2><p>Members reviewing completed laboratory reports</p></div>
                                 <div><h2>Core challenge</h2><p>Explain clinical meaning without diagnosing, alarming or falsely reassuring</p></div>
                             </div>
+                        </div>
+                        <div class="container case-study-impact" aria-label="Impact at a glance">
+                            <h2 class="impact-title">At a glance</h2>
+                            <div class="impact-grid"><div class="impact-tile"><em>Model</em><strong>2 tabs</strong><span>Factual status separated from interpretation</span></div><div class="impact-tile"><em>Triage</em><strong>7 categories</strong><span>Findings ordered by severity, not alarm</span></div><div class="impact-tile"><em>Quality</em><strong>8 rules</strong><span>Testable acceptance criteria for safety</span></div></div>
+                            <p class="impact-note">Phase 1 experience and safety contract. Live results will be added after launch.</p>
+                        </div>
                         </div>
                         <div class="container">
                             <div class="row portfolio-gallery">
@@ -199,46 +200,31 @@
         </section>
         <nav class="container case-study-next" aria-label="Other case studies"><a href="project5.html">&#8592; Previous case study</a><a href="index.html#featureprojects">All projects</a><a href="project7.html">Next case study &#8594;</a></nav>
 
-        <!-- footer of the page -->
-        <footer class="footer footer-v1" id="contactdetails">
-            <div class="content-block footer-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <ul class="social-network with-text">
-                                <li><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank"><span class="icon-linkedin"></span></a></li>
-                                <li><a href="https://www.behance.net/itsshane92" target="_blank"><span class="icon-behance"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-nav inline-nav text-center">
-                                <ul>
-                                    <li><a href="index.html#intro">Home</a></li>
-                                    <li><a href="index.html#featureprojects">portfolio</a></li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-logo text-right">
-                               <h3 class="text-white">AK</h3>
-                            </div>
-                        </div>
+        <section class="ln-contact" id="contactdetails">
+            <div class="ln-wrap">
+                <div class="ln-contact-card">
+                    <div>
+                        <span class="eyebrow">Let’s talk</span>
+                        <h2>Have a complex product that needs clarity?</h2>
+                        <p>I’m always happy to talk about design leadership, healthcare products and design systems.</p>
+                    </div>
+                    <div class="ln-actions">
+                        <a class="ln-primary" href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">Message on LinkedIn</a>
+                        <a class="ln-ghost" href="https://www.behance.net/itsshane92" target="_blank" rel="noopener">View Behance</a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom text-center">
-                <div class="container">
-                    <p>Copyright 2023 - Arun Kumar </p>
+                <div class="ln-footer">
+                    <span>© 2026 Arun Kumar · Lead Product Designer</span>
+                    <nav aria-label="Footer"><a href="index.html#featureprojects">Work</a><a href="index.html#approach">Approach</a><a href="index.html#expertise">Expertise</a><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">LinkedIn</a></nav>
                 </div>
             </div>
-        </footer>
+        </section>
         <!--/footer of the page -->
     </div>
      <!-- search form wrapper -->
    
 
-    <a href="#" class="section-scroll" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    <a href="#" class="section-scroll" id="scroll-to-top" aria-label="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     <!-- jquery library -->
     <script src="vendors/jquery/jquery-2.1.4.min.js"></script>
     <!-- external scripts -->
@@ -261,6 +247,11 @@
     <!-- custom jquery script -->
     <script src="js/jquery.main.js"></script>
     <script src="js/case-study.js"></script>
+    <script>
+    (function(){var nav=document.getElementById('siteNav'),btn=document.getElementById('navToggle');if(!nav||!btn)return;
+    btn.addEventListener('click',function(){var o=nav.classList.toggle('is-open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close menu':'Open menu');});
+    var s=function(){nav.classList.toggle('is-scrolled',window.scrollY>8);};s();window.addEventListener('scroll',s,{passive:true});})();
+    </script>
 </body>
 
 </html>

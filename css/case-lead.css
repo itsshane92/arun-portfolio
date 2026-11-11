@@ -1,0 +1,104 @@
+/* Case study pages — align with the lead-designer home page (index.html / home-lead.css) */
+:root{--ink:#12141c;--ink-2:#3b4150;--muted:#667085;--line:#e6e8ee;--bg-soft:#f6f7fb;--accent:#5b4df5;--accent-soft:#efedff;--accent-ink:#3f32d6;--dark:#0f111a}
+
+/* Typography */
+body,h1,h2,h3,h4,h5,h6,p,li,a,strong,small,figcaption,blockquote,button,input,textarea,.content-title,.text-block-title{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+body{letter-spacing:normal;color:var(--ink);-webkit-font-smoothing:antialiased;background:#fff}
+h1,h2,h3,h4,h5,h6{color:var(--ink);font-weight:700;letter-spacing:-.02em}
+.case-study-hero h1{letter-spacing:-.035em;line-height:1.06}
+:where(.portfolio-des) :where(p,li){color:var(--ink-2);line-height:1.75}
+/* Dark panels keep light text (component CSS wins over the defaults above) */
+.cmp-problem p,.cmp-problem li,.case-study-outcome p{color:#d9dce5}
+h1,h2,h3,h4,h5,h6,.text-block-title{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif!important}
+.portfolio-des small{color:#5f6675!important;font-size:.86rem}
+.ln-subhead{font-size:20px;line-height:1.3;margin-bottom:.6rem}
+.text-block-title{font-size:clamp(24px,2.6vw,34px);line-height:1.2;letter-spacing:-.02em}
+.case-study-eyebrow{color:var(--accent)!important;font-weight:600}
+.case-study-summary{border-color:var(--line);border-radius:20px;background:var(--bg-soft);box-shadow:none}
+.case-study-outcome{border-radius:28px;background:var(--dark)}
+.case-study-next a{border-color:var(--line);border-radius:999px;font-weight:600;transition:border-color .2s ease}
+.case-study-next a:hover{border-color:var(--ink);text-decoration:none}
+.case-study-progress{background:var(--accent)}
+.portfolio-gallery .img-block img{border-radius:20px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+body p,body li,body a,body span,body small,body figcaption,body strong,body h1,body h2,body h3,body h4{letter-spacing:normal}
+.case-study-eyebrow,.case-study-summary h2,.ln-contact-card .eyebrow{letter-spacing:.12em!important}
+
+/* Page offset for the sticky (non-fixed) header */
+main.no-banner{padding-top:132px!important}
+.case-study-toc{top:110px}
+
+/* Nav (mirrors home-lead.css) */
+.ln-wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 32px}
+.site-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.86);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s ease}
+.site-nav.is-scrolled{border-bottom-color:var(--line)}
+.site-nav .nav-inner{position:relative;display:flex;align-items:center;justify-content:space-between;height:76px}
+.site-nav .brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none}
+.site-nav .brand-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--ink);color:#fff;font-weight:700;font-size:15px}
+.site-nav .brand-text strong{display:block;font-size:16px;line-height:1.2;color:var(--ink)}
+.site-nav .brand-text span{display:block;color:var(--muted);font-size:13px;line-height:1.4}
+.site-nav .nav-links{display:flex;align-items:center;gap:6px;list-style:none;margin:0;padding:0}
+.site-nav .nav-links li{margin:0;padding:0}
+.site-nav .nav-links a{display:block;padding:10px 14px;border-radius:999px;color:var(--ink-2);font-size:15px;font-weight:500;line-height:1.4;text-decoration:none}
+.site-nav .nav-links a:hover{background:var(--bg-soft);color:var(--ink)}
+.site-nav .nav-links a.ln-btn{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;margin-left:8px;background:var(--ink);color:#fff}
+.site-nav .nav-links a.ln-btn:hover{background:#000;color:#fff}
+.site-nav .nav-toggle{display:none;width:44px;height:44px;padding:0;border:1px solid var(--line);border-radius:12px;background:#fff;cursor:pointer}
+.site-nav .nav-toggle span{display:block;width:18px;height:2px;margin:4px auto;background:var(--ink);border-radius:2px;transition:transform .2s ease,opacity .2s ease}
+
+/* Contact + footer (mirrors home-lead.css) */
+.ln-contact{padding:96px 0 0;background:#fff}
+.ln-contact-card{position:relative;overflow:hidden;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:end;padding:64px;border-radius:32px;background:var(--dark);color:#fff}
+.ln-contact-card:after{content:"";position:absolute;right:-160px;top:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(closest-side,rgba(91,77,245,.45),transparent);pointer-events:none}
+.ln-contact-card .eyebrow{position:relative;display:block;color:#a9a1ff;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.ln-contact-card h2{position:relative;margin:14px 0 0;color:#fff;font-size:clamp(28px,3.6vw,44px);line-height:1.12;letter-spacing:-.025em}
+.ln-contact-card p{position:relative;margin:16px 0 0;color:#b9bdc9;font-size:17px}
+.ln-actions{position:relative;display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}
+.ln-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;transition:background .2s ease,border-color .2s ease}
+.ln-actions .ln-primary{background:#fff;color:var(--ink)}
+.ln-actions .ln-primary:hover{background:#f1f1f5;color:var(--ink)}
+.ln-actions .ln-ghost{border:1px solid #3a3f52;color:#fff}
+.ln-actions .ln-ghost:hover{border-color:#fff;color:#fff}
+.ln-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding:40px 0 48px;color:var(--muted);font-size:14px}
+.ln-footer nav{display:flex;gap:20px}
+.ln-footer a{color:var(--muted);text-decoration:none}
+.ln-footer a:hover{color:var(--ink)}
+
+@media(max-width:900px){
+  .site-nav .nav-toggle{display:block}
+  .site-nav .nav-links{position:absolute;top:76px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:2px;padding:12px 32px 20px;background:#fff;border-bottom:1px solid var(--line)}
+  .site-nav.is-open .nav-links{display:flex}
+  .site-nav.is-open .nav-toggle span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+  .site-nav.is-open .nav-toggle span:nth-child(2){opacity:0}
+  .site-nav.is-open .nav-toggle span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+  .site-nav .nav-links a{padding:14px 12px}
+  .site-nav .nav-links a.ln-btn{justify-content:center;margin:8px 0 0}
+  .ln-contact-card{grid-template-columns:1fr;padding:40px}
+  .ln-actions{justify-content:flex-start}
+  main.no-banner{padding-top:108px!important}
+}
+@media(max-width:600px){
+  .ln-wrap{padding:0 16px}
+  .site-nav .nav-links{padding:12px 16px 20px}
+  .site-nav .brand-text span{display:none}
+  .ln-contact{padding-top:64px}
+  .ln-contact-card{padding:28px 20px;border-radius:24px}
+  .ln-actions a{flex:1 1 100%}
+}
+@media(prefers-reduced-motion:reduce){.site-nav,.site-nav .nav-toggle span,.ln-actions a{transition:none}}
+
+@media(max-width:600px){.container.case-study-summary,.container.case-study-outcome{width:auto;max-width:none;margin-left:16px;margin-right:16px}}
+.case-study-toc a{color:#5f6675}
+.case-study-toc a:hover,.case-study-toc a.active{color:var(--accent-ink);border-color:var(--accent-ink)}
+
+/* Impact at a glance (recruiter-scannable summary under the hero) */
+.case-study-impact{margin:-2.5rem auto 4.5rem}
+.case-study-impact .impact-title{margin:0 0 14px;color:var(--muted);font-size:13px!important;font-weight:600;letter-spacing:.12em!important;text-transform:uppercase}
+.impact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.impact-tile{display:flex;flex-direction:column;gap:6px;padding:24px;border:1px solid var(--line);border-radius:20px;background:#fff}
+.impact-tile em{align-self:flex-start;padding:4px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);font-style:normal;font-size:12px;font-weight:600}
+.impact-tile strong{margin-top:6px;color:var(--ink);font-size:clamp(26px,2.6vw,34px);line-height:1.1;letter-spacing:-.02em}
+.impact-tile span{color:#4b5262;font-size:15px;line-height:1.5}
+.impact-note{margin:12px 0 0;color:#5f6675;font-size:13px}
+@media(max-width:767px){.impact-grid{grid-template-columns:1fr}.case-study-impact{margin:-1rem 16px 3rem;width:auto;max-width:none}.impact-tile{padding:18px 20px}}

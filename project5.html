@@ -24,37 +24,31 @@
     <!-- Theme CSS -->
     <link media="all" rel="stylesheet" href="css/main.css">
     <link media="all" rel="stylesheet" href="css/case-study.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link media="all" rel="stylesheet" href="css/case-lead.css">
+    <link media="all" rel="stylesheet" href="css/case-variants.css">
+</head>
 
-<body>
+<body class="cs-index">
     <!-- main wrapper --> 
     <div id="wrapper">
         <div class="page-wrapper">
             <!-- header of the page -->
-            <header class="fixed-top main-header header-white no-top-header" id="waituk-main-header">
-                <div id="nav-section">
-                    <div class="bottom-header container-fluid mega-menus" id="mega-menus">
-                        <nav class="navbar navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
-                            <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#mega-menu">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html" style="font-size: 24px;
-                            font-weight: 700;"> AK </a>
-                            <div class="collapse navbar-collapse flex-row-reverse" id="mega-menu">
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <a href="index.html#intro"> Home </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#featureprojects"> Portfolio </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#contactdetails"> Contact </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+            <header class="site-nav" id="siteNav">
+                <div class="ln-wrap nav-inner">
+                    <a class="brand" href="index.html" aria-label="Arun Kumar — home">
+                        <span class="brand-mark">AK</span>
+                        <span class="brand-text"><strong>Arun Kumar</strong><span>Lead Product Designer</span></span>
+                    </a>
+                    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html#featureprojects">Work</a></li>
+                        <li><a href="index.html#approach">Approach</a></li>
+                        <li><a href="index.html#expertise">Expertise</a></li>
+                        <li><a class="ln-btn" href="#contactdetails">Let’s talk</a></li>
+                    </ul>
                 </div>
             </header>
             <!--/header of the page -->
@@ -74,6 +68,11 @@
                                 <div><h2>Primary users</h2><p>Product designers and delivery teams</p></div>
                                 <div><h2>Core challenge</h2><p>Unify varied use cases without blocking teams</p></div>
                             </div>
+                        </div>
+                        <div class="container case-study-impact" aria-label="Impact at a glance">
+                            <h2 class="impact-title">At a glance</h2>
+                            <div class="impact-grid"><div class="impact-tile"><em>Team</em><strong>Led 3 designers</strong><span>Design-system initiative</span></div><div class="impact-tile"><em>Foundations</em><strong>Figma tokens</strong><span>Colour, type, grid, spacing and elevation</span></div><div class="impact-tile"><em>Components</em><strong>Documented</strong><span>States, usage rules, annotations and breakpoints</span></div></div>
+                            <p class="impact-note">Built as a shared foundation for product designers and engineers.</p>
                         </div>
                         <div class="container">
                             <div class="row portfolio-gallery">
@@ -156,22 +155,11 @@
                                             <div class="img-block col-lg-12 bottom-space" style="margin-top: 40px;">
                                                 <img src="img/DS.png" alt="Ds — project case study visual">
                                             </div>
-                                          <ul>  
-                                            <li><b>Cohesion that Converts:</b><br>
-
-Imagine a seamless experience across all your platforms: website, app, marketing materials – everything singing the same brand tune.  That's Design Systems in action. They establish a unified look and feel, building trust and recognition with your users. Think of it as your brand's style guide, ensuring everyone's on the same page (literally!).<br><br></li>
-
-<li><b>Innovation, Not Imitation:</b><br>
-
-Remember reinventing the wheel with every new project? Design Systems liberate your team from repetitive tasks. 🪓 Pre-built components, code snippets, and style guides become your creative toolkit, freeing up time and energy for innovation. It's like having a library of pre-designed elements you can customize and combine to create amazing new things. ✨<br><br></li>
-
-<li<b>>Happy Users, Happy Business:</b><br>
-
-When your interfaces are intuitive and consistent, users don't get lost in the wilderness.  They know where things are, how to interact, and what to expect. This translates to smoother user journeys, higher engagement, and ultimately, more satisfied customers.  Remember, happy users are loyal users, and loyal users translate to sustainable growth.<br><br></li>
-
-<li><b>Scaling Without Stumbling:</b><br>
-
-Imagine effortlessly adding new features or products without design inconsistencies.  That's the power of a Design System. It acts like a pre-planned city layout, allowing your design team to build and expand efficiently. This flexibility ensures your brand stays cohesive even as you grow.<br></li>
+                                          <ul>
+<li><b>Consistency teams can trust:</b> one source of truth for colour, type, spacing and components across web and app.</li>
+<li><b>Speed without rework:</b> designers stop rebuilding the same components and spend time on product problems instead.</li>
+<li><b>Predictable experiences for users:</b> familiar patterns mean fewer surprises and less relearning between products.</li>
+<li><b>Room to scale:</b> new features and products can be assembled from tested parts without visual drift.</li>
 </ul>
 
 
@@ -234,19 +222,19 @@ Imagine effortlessly adding new features or products without design inconsistenc
                                                      
                                                           <div class="row bottom-space">
                                                             <div class="col-lg-3">
-                                                                <h5>Component name:</h5>
+                                                                <h3 class="ln-subhead">Component name:</h3>
                                                                 <p>A specific and unique UI component name, to avoid miscommunication between designers and developers. This needed to be clear so that the components would work as they were supposed to without error.</p>
                                                                 </div>
                                                                 <div class="col-lg-3">
-                                                                    <h5>State changes:</h5>
+                                                                    <h3 class="ln-subhead">State changes:</h3>
                                                                     <p>Recommended defaults and the subsequent changes in appearance.</p>
                                                                     </div>
                                                                     <div class="col-lg-3">
-                                                                        <h5>Note making:</h5>
+                                                                        <h3 class="ln-subhead">Note making:</h3>
                                                                         <p>Page annotations and descriptions to understand what component you were looking at. </p>
                                                                         </div>
                                                                         <div class="col-lg-3">
-                                                                            <h5>Breakpoints:</h5>
+                                                                            <h3 class="ln-subhead">Breakpoints:</h3>
                                                                             <p>Any size indication and breakpoints for the developers. </p>
                                                                             </div>
                                                             
@@ -277,9 +265,9 @@ Imagine effortlessly adding new features or products without design inconsistenc
                                             
                                                 <div class="col-lg-12">
                                                     <div class="text-block bottom-space">
-                                                        <h2 class="text-block-title">Get out there and start enable-ling!:</h2>
+                                                        <h2 class="text-block-title">What I would do next</h2>
                                                         
-                                                        <p>Figma empower you to create dynamic, consistent, and adaptable design systems. By following best practices, exploring advanced techniques, and troubleshooting common challenges, you can optimize your design system workflow and achieve a cohesive and efficient design process.</p>
+                                                        <p>Treat the system as a product: publish a changelog, run a contribution model with engineering, and track adoption — component coverage, detached instances and time to build a new screen — so the system earns its place in every team's workflow.</p>
                                                         
                                                         
                                                         
@@ -297,52 +285,37 @@ Imagine effortlessly adding new features or products without design inconsistenc
         </div>
         <section class="container case-study-outcome" aria-labelledby="outcome-title">
             <div class="case-study-outcome-grid">
-                <div><h2 id="outcome-title">Outcome and evidence</h2><p>Foundations and reusable components delivered; adoption and efficiency metrics were not formally tracked.</p></div>
-                <div><h2>What I would measure next</h2><p>Task completion, time on task, error or abandonment rate, user confidence, and adoption after release. This separates demonstrated design work from outcomes that require production data.</p></div>
+                <div><h2 id="outcome-title">Outcome and evidence</h2><p>Foundations and a documented component library delivered; adoption and efficiency metrics were not formally tracked.</p></div>
+                <div><h2>What I would measure next</h2><p>Component coverage across product files, detached-instance rate, time to build a new screen and handoff questions from engineering.</p></div>
             </div>
         </section>
         <nav class="container case-study-next" aria-label="Other case studies"><a href="project4.html">&#8592; Previous case study</a><a href="index.html#featureprojects">All projects</a><a href="project6.html">Next case study &#8594;</a></nav>
 
-        <!-- footer of the page -->
-        <footer class="footer footer-v1" id="contactdetails">
-            <div class="content-block footer-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <ul class="social-network with-text">
-                                <li><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank"><span class="icon-linkedin"></span></a></li>
-                                <li><a href="https://www.behance.net/itsshane92" target="_blank"><span class="icon-behance"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-nav inline-nav text-center">
-                                <ul>
-                                    <li><a href="index.html#intro">Home</a></li>
-                                    <li><a href="index.html#featureprojects">portfolio</a></li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-logo text-right">
-                               <h3 class="text-white">AK</h3>
-                            </div>
-                        </div>
+        <section class="ln-contact" id="contactdetails">
+            <div class="ln-wrap">
+                <div class="ln-contact-card">
+                    <div>
+                        <span class="eyebrow">Let’s talk</span>
+                        <h2>Have a complex product that needs clarity?</h2>
+                        <p>I’m always happy to talk about design leadership, healthcare products and design systems.</p>
+                    </div>
+                    <div class="ln-actions">
+                        <a class="ln-primary" href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">Message on LinkedIn</a>
+                        <a class="ln-ghost" href="https://www.behance.net/itsshane92" target="_blank" rel="noopener">View Behance</a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom text-center">
-                <div class="container">
-                    <p>Copyright 2023 - Arun Kumar </p>
+                <div class="ln-footer">
+                    <span>© 2026 Arun Kumar · Lead Product Designer</span>
+                    <nav aria-label="Footer"><a href="index.html#featureprojects">Work</a><a href="index.html#approach">Approach</a><a href="index.html#expertise">Expertise</a><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">LinkedIn</a></nav>
                 </div>
             </div>
-        </footer>
+        </section>
         <!--/footer of the page -->
     </div>
      <!-- search form wrapper -->
    
 
-    <a href="#" class="section-scroll" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    <a href="#" class="section-scroll" id="scroll-to-top" aria-label="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     <!-- jquery library -->
     <script src="vendors/jquery/jquery-2.1.4.min.js"></script>
     <!-- external scripts -->
@@ -365,6 +338,11 @@ Imagine effortlessly adding new features or products without design inconsistenc
     <!-- custom jquery script -->
     <script src="js/jquery.main.js"></script>
     <script src="js/case-study.js"></script>
+    <script>
+    (function(){var nav=document.getElementById('siteNav'),btn=document.getElementById('navToggle');if(!nav||!btn)return;
+    btn.addEventListener('click',function(){var o=nav.classList.toggle('is-open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close menu':'Open menu');});
+    var s=function(){nav.classList.toggle('is-scrolled',window.scrollY>8);};s();window.addEventListener('scroll',s,{passive:true});})();
+    </script>
 </body>
 
 </html>

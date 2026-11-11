@@ -24,37 +24,31 @@
     <!-- Theme CSS -->
     <link media="all" rel="stylesheet" href="css/main.css">
     <link media="all" rel="stylesheet" href="css/case-study.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link media="all" rel="stylesheet" href="css/case-lead.css">
+    <link media="all" rel="stylesheet" href="css/case-variants.css">
+</head>
 
-<body>
+<body class="cs-classic">
     <!-- main wrapper --> 
     <div id="wrapper">
         <div class="page-wrapper">
             <!-- header of the page -->
-            <header class="fixed-top main-header header-white no-top-header" id="waituk-main-header">
-                <div id="nav-section">
-                    <div class="bottom-header container-fluid mega-menus" id="mega-menus">
-                        <nav class="navbar navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
-                            <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#mega-menu">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html" style="font-size: 24px;
-                            font-weight: 700;"> AK </a>
-                            <div class="collapse navbar-collapse flex-row-reverse" id="mega-menu">
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <a href="index.html#intro"> Home </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#featureprojects"> Portfolio </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#contactdetails"> Contact </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+            <header class="site-nav" id="siteNav">
+                <div class="ln-wrap nav-inner">
+                    <a class="brand" href="index.html" aria-label="Arun Kumar — home">
+                        <span class="brand-mark">AK</span>
+                        <span class="brand-text"><strong>Arun Kumar</strong><span>Lead Product Designer</span></span>
+                    </a>
+                    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html#featureprojects">Work</a></li>
+                        <li><a href="index.html#approach">Approach</a></li>
+                        <li><a href="index.html#expertise">Expertise</a></li>
+                        <li><a class="ln-btn" href="#contactdetails">Let’s talk</a></li>
+                    </ul>
                 </div>
             </header>
             <!--/header of the page -->
@@ -74,6 +68,11 @@
                                 <div><h2>Primary users</h2><p>In-house doctors and clinical teams</p></div>
                                 <div><h2>Core challenge</h2><p>Increase efficiency while preserving clinical context and safety</p></div>
                             </div>
+                        </div>
+                        <div class="container case-study-impact" aria-label="Impact at a glance">
+                            <h2 class="impact-title">At a glance</h2>
+                            <div class="impact-grid"><div class="impact-tile"><em>Measured</em><strong>35–45%</strong><span>Less time doctors spend operating the tool</span></div><div class="impact-tile"><em>Measured</em><strong>+27%</strong><span>Consultations vs the previous quarter (1,100+ in 3 months)</span></div><div class="impact-tile"><em>Method</em><strong>Doctor-led</strong><span>Interviews and usability testing across specialities</span></div></div>
+                            <p class="impact-note">Results measured over three months after launch.</p>
                         </div>
                         <div class="container">
                             <div class="row portfolio-gallery">
@@ -144,12 +143,12 @@
                             <div class="portfolio-des top-space">
                                 <div class="row">
                                     <div class="col-lg-12 text-block bottom-space">
-                                        <h2 class="text-block-title">Story Behind Connect and Heal:</h2>
-                                        <p>Driven by a passion to improve primary care and empower patients, CNH Care uses technology and a team of specialists to offer seamless "connect and heal" services. Inspired by the founder's personal experience with a flawed healthcare system, they make family doctors central to your care, guiding you through any health challenge, no matter where you are. </p>
+                                        <h2 class="text-block-title">Context</h2>
+                                        <p>Connect and Heal runs an in-house primary-care service for corporate employees. Its doctors were juggling patient history, consultations, prescriptions and appointments across disconnected tools — time spent operating software instead of talking to patients.</p>
                                     </div>
                                     <div class="col-lg-12 text-block bottom-space">
-                                        <h2 class="text-block-title">Observe and Understand:</h2>
-                                        <p>Before you start creating, Design Thinking encourages you to listen first. By observing, having conversations, and immersing yourself in the users' experiences, you'll gain valuable insights. These insights will help you understand and define the problem more clearly. </p>
+                                        <h2 class="text-block-title">My approach</h2>
+                                        <p>I led the work end to end: stakeholder interviews to set business goals, interviews with doctors across specialities, competitor benchmarking, personas and flows, usability testing of early designs, and the final web interface.</p>
                                     </div>
                                     <div class="col-lg-12 bottom-space">
                                         <div class="text-block bottom-space">
@@ -158,14 +157,14 @@
                                             <div class="row">
                                                 <div class="col-sm-12">
                                                     <!-- <h3>Heading</h3> -->
-                                                    <p>Creating an Electronic Medical Records (EMR) system aims to provide a comprehensive and efficient platform for in-house doctors to manage patient information, consultations, prescriptions, and appointments.</p>
+                                                    <p>Doctors needed one workspace to see a patient's history, run a consultation, write a prescription and manage appointments — fast enough that the tool stays out of the way of the conversation with the patient.</p>
                                                 </div>
                                                 
                                             </div>  </div>
 
                                             <div class="text-block bottom-space">
                                                 <h2 class="text-block-title bottom-space">Outcomes and Impact:</h2>
-                                                <p>Creating an Electronic Medical Records (EMR) system aims to provide a comprehensive and efficient platform for in-house doctors to manage patient information, consultations, prescriptions, and appointments.</p>
+                                                <p>Within three months of launch:</p>
                                                 <div class="blockquote-block blockquote-block-v3 bg-gray-light bottom-space">
                                                     <blockquote>
                                                         <div class="row ">
@@ -250,17 +249,17 @@
                                                 <div class="col-lg-12">
                                                     <div class="text-block bottom-space">
                                                         <h2 class="text-block-title">Understanding Market Needs for a Standout Product:</h2>
-                                                        <p>Before we even break ground, we'll gain in-depth insights into our product's potential. By researching its target audience and market fit, we'll ensure a laser-sharp focus on its value proposition. Benchmarking competitors and identifying gaps will pave the way for a unique offering that surpasses anything currently available.</p>
+                                                        <p>Stakeholder interviews and market benchmarking defined what the EMR needed to do for the business and where existing products fell short.</p>
                                                         <div class="row bottom-space">
                                                             <div class="col-sm-12">
-                                                               <h4>In-Depth Business Analysis</h4> 
+                                                               <h3 class="ln-subhead">In-Depth Business Analysis</h3> 
                                                                 <p>We Conducted a stake holder Interview to understand and elaborate the problem statement so that we can understand long terms and short term goals for the product they are trying to build, Understanding long term goal will help us design the product in a way where we would also think about scalability factor of the product.</p>
                                                             </div>
                                                             
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-sm-12 bottom-space">
-                                                               <h4>Business Objective</h4> 
+                                                               <h3 class="ln-subhead">Business Objective</h3> 
                                                                <ul>
                                                                 <li>Access Medical consultation with doctors by providing minimal information
                                                                     for Corporte employee identification in the EMR Portal
@@ -276,7 +275,7 @@
                                                         </div>
                                                         <!-- <div class="row">
                                                             <div class="col-sm-12">
-                                                                <h4>Business Objective</h4> 
+                                                                <h3 class="ln-subhead">Business Objective</h3> 
                                                                 <div class="img-block col-lg-12 bottom-space" >
                                                                     
                                                                     <img  src="img/sm_business.webp" alt="Sm business — project case study visual" style="width: 80%;">
@@ -288,7 +287,7 @@
                                                         </div> -->
                                                         <!-- <div class="row">
                                                             <div class="col-sm-12">
-                                                                <h4>Platform Goals</h4> 
+                                                                <h3 class="ln-subhead">Platform Goals</h3> 
                                                                 <div class="img-block col-lg-12 bottom-space" >
                                                                     
                                                                     <img  src="img/sm_platform.webp" alt="Sm platform — project case study visual" style="width: 80%;">
@@ -314,12 +313,12 @@
                                                 <div class="col-lg-12">
                                                     <div class="text-block bottom-space">
                                                         <!-- <h2 class="text-block-title">User Interview and Surveys:</h2> -->
-                                                        <h4>User Interview</h4> 
+                                                        <h3 class="ln-subhead">User Interview</h3> 
                                                         <p>We conducted in-depth interviews with doctors from various speciality, gathering valuable insights from diverse perspectives. Here's a summary of the key findings:</p>
                                                         <div class="img-block col-lg-12 bottom-space">
                                                             <img src="img/emr_user_research_1.png" alt="Emr user research 1 — project case study visual" style="width: 85%;">
                                                         </div>
-                                                        <h4>Insights from Research</h4> 
+                                                        <h3 class="ln-subhead">Insights from Research</h3> 
                                                         <div class="img-block col-lg-12">
                                                             <img src="img/emr_user_research_2.png" alt="Emr user research 2 — project case study visual" style="width: 95%;">
                                                         </div>
@@ -329,11 +328,11 @@
                                                 <div class="col-lg-12">
                                                     <div class="text-block bottom-space">
                                                         <h2 class="text-block-title">Competitor Analysis:</h2>
-                                                        <p class="bottom-space">Analyzing competitors helps benchmark our product against existing offerings, allowing us to identify areas for improvement and opportunities for differentiation. </p>
-                                                        <h4>Benchmarking</h4> 
-                                                        <p class="bottom-space">Analyzing competitors helps benchmark our product against existing offerings, allowing us to identify areas for improvement and opportunities for differentiation. </p>
-                                                        <h4>Gaps</h4> 
-                                                        <p>Analyzing competitors helps benchmark our product against existing offerings, allowing us to identify areas for improvement and opportunities for differentiation. </p>
+                                                        <p class="bottom-space">I benchmarked EMR products used by clinics on information architecture, prescription speed and record visibility.</p>
+                                                        <h3 class="ln-subhead">Benchmarking</h3> 
+                                                        <p class="bottom-space">Most tools were either feature-heavy and slow to navigate, or simple but missing structured history and templates.</p>
+                                                        <h3 class="ln-subhead">Gaps</h3> 
+                                                        <p>That gap — structured clinical data with a fast, familiar flow — became the product positioning.</p>
                                                         <div class="img-block col-lg-12">
                                                             <img src="img/emr_user_research_3.png" alt="Emr user research 3 — project case study visual" style="width: 75%;">
                                                         </div>
@@ -354,7 +353,7 @@
                                                 <div class="col-lg-12">
                                                     <div class="text-block bottom-space">
                                                         <h2 class="text-block-title">Preparing the Path for User-Driven Designs:</h2>
-                                                        <p>After soaking up all we can in the Empathize stage, the Define stage is where we connect the dots. We take all the user insights and research, crunch them together, and distill the essence into a clear, human-centered problem statement. This sets the stage for the journey ahead! </p>
+                                                        <p>I synthesised interviews into the problems that cost doctors the most time: re-entering history, hunting for past prescriptions and switching tools mid-consultation.</p>
                                                         
                                                     </div>
                                                    
@@ -362,7 +361,7 @@
                                                 <div class="col-lg-12">
                                                     <div class="text-block bottom-space">
                                                         <h2 class="text-block-title">User Persona:</h2>
-                                                        <p>Walk a mile in their digital shoes: Personas are crafted companions, embodying user types within your target audience. With their unique needs and goals, they help us shed our own biases and embrace diverse perspectives. This empathy fuels better design decisions, paving the way for a seamless and satisfying user experience.</p>
+                                                        <p>Personas for general physicians and specialists kept decisions anchored to how each actually runs a consultation.</p>
                                                         <div class="img-block col-lg-12">
                                                             <img src="img/emr_user_research_5.png" alt="Emr user research 5 — project case study visual" >
                                                         </div>
@@ -382,7 +381,7 @@
                                                 <div class="col-lg-12">
                                                     <div class="text-block bottom-space">
                                                         <h2 class="text-block-title">From Insight to Implementation:</h2>
-                                                        <p>Aligning business vision, user needs, and technical capabilities ensures a clear, engaging, and obstacle-free strategy. This focused approach helps teams prioritize resources and solve the right problems for their target users, leading to a successful and satisfying experience for all.</p>
+                                                        <p>I prioritised features by doctor time saved and clinical safety, then mapped them against technical feasibility for the first release.</p>
                                                         
                                                     </div>
                                                    
@@ -439,7 +438,7 @@
                                                             <div class="text-block bottom-space">
                                                                 <!-- <h2 class="text-block-title">User Interview and Surveys:</h2> -->
                                                                 
-                                                                <h4>Insights from Usability</h4> 
+                                                                <h3 class="ln-subhead">Insights from Usability</h3> 
                                                                 <div class="img-block col-lg-12">
                                                                     <img src="img/emr_user_flow_3.png" alt="Emr user flow 3 — project case study visual" >
                                                                 </div>
@@ -480,12 +479,12 @@
                                                 <div class="col-lg-12">
                                                     <div class="text-block bottom-space">
                                                         <h2 class="text-block-title">Final Designs:</h2>
-                                                        <p>Iterative development, enhanced. Low-fidelity prototypes act as MVPs (minimum viable products) of ideas. Quick to create and easy to modify, they drive test-and-refine cycles, allowing you to explore various solutions simultaneously and ultimately identify the one that precisely addresses unmet user needs.</p>
+                                                        <p>The final web interface keeps the consultation on one screen: patient summary, the consultation and prescription, with templates and history one click away.</p>
                                                         
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-sm-12"><h4>Web Design
-                                                        </h4></div>
+                                                        <div class="col-sm-12"><h3 class="ln-subhead">Web Design
+                                                        </h3></div>
                                                         
                                                         <div class="col-sm-12">
                                                             <div class="img-block col-lg-12 bottom-space" >
@@ -514,7 +513,7 @@
 
                                                 <div class="col-lg-12">
                                                     <div class="text-block bottom-space">
-                                                        <h2 class="text-block-title">6. Enhancements Planned:</h2>
+                                                        <h2 class="text-block-title">What comes next</h2>
                                                         
                                                         <ul class="bottom-space">
                                                             <li>Incorporate medical health records and vitals into the patient app. </li>
@@ -522,8 +521,6 @@
                                                             <li>Scheduling appointments for in-house clinic visits with doctors.</li>
                                                             <li>Enhance the platform using data insights and feedback from doctors.</li>
                                                         </ul>
-
-                                                        <h3>Thank you for reading!</h3>
                                                         
                                                     </div>
                                                 </div>
@@ -538,52 +535,37 @@
         </div>
         <section class="container case-study-outcome" aria-labelledby="outcome-title">
             <div class="case-study-outcome-grid">
-                <div><h2 id="outcome-title">Outcome and evidence</h2><p>Core workflows were researched and designed with clinician input; operational impact was not disclosed.</p></div>
-                <div><h2>What I would measure next</h2><p>Task completion, time on task, error or abandonment rate, user confidence, and adoption after release. This separates demonstrated design work from outcomes that require production data.</p></div>
+                <div><h2 id="outcome-title">Outcome and evidence</h2><p>Measured over three months after launch: doctors spent 35–45% less time operating the tool, and the clinic completed 1,100+ consultations — 27% more than the previous quarter.</p></div>
+                <div><h2>What I would measure next</h2><p>Time per consultation, prescription errors, template reuse and doctor satisfaction across specialities.</p></div>
             </div>
         </section>
-        <nav class="container case-study-next" aria-label="Other case studies"><a href="project6.html">&#8592; Previous case study</a><a href="index.html#featureprojects">All projects</a><a href="project1.html">Next case study &#8594;</a></nav>
+        <nav class="container case-study-next" aria-label="Other case studies"><a href="project6.html">&#8592; Previous case study</a><a href="index.html#featureprojects">All projects</a><a href="project8.html">Next case study &#8594;</a></nav>
 
-        <!-- footer of the page -->
-        <footer class="footer footer-v1" id="contactdetails">
-            <div class="content-block footer-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <ul class="social-network with-text">
-                                <li><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank"><span class="icon-linkedin"></span></a></li>
-                                <li><a href="https://www.behance.net/itsshane92" target="_blank"><span class="icon-behance"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-nav inline-nav text-center">
-                                <ul>
-                                    <li><a href="index.html#intro">Home</a></li>
-                                    <li><a href="index.html#featureprojects">portfolio</a></li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="footer-logo text-right">
-                               <h3 class="text-white">AK</h3>
-                            </div>
-                        </div>
+        <section class="ln-contact" id="contactdetails">
+            <div class="ln-wrap">
+                <div class="ln-contact-card">
+                    <div>
+                        <span class="eyebrow">Let’s talk</span>
+                        <h2>Have a complex product that needs clarity?</h2>
+                        <p>I’m always happy to talk about design leadership, healthcare products and design systems.</p>
+                    </div>
+                    <div class="ln-actions">
+                        <a class="ln-primary" href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">Message on LinkedIn</a>
+                        <a class="ln-ghost" href="https://www.behance.net/itsshane92" target="_blank" rel="noopener">View Behance</a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom text-center">
-                <div class="container">
-                    <p>Copyright 2023 - Arun Kumar </p>
+                <div class="ln-footer">
+                    <span>© 2026 Arun Kumar · Lead Product Designer</span>
+                    <nav aria-label="Footer"><a href="index.html#featureprojects">Work</a><a href="index.html#approach">Approach</a><a href="index.html#expertise">Expertise</a><a href="https://www.linkedin.com/in/arun-kumar-a4131549/" target="_blank" rel="noopener">LinkedIn</a></nav>
                 </div>
             </div>
-        </footer>
+        </section>
         <!--/footer of the page -->
     </div>
      <!-- search form wrapper -->
    
 
-    <a href="#" class="section-scroll" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    <a href="#" class="section-scroll" id="scroll-to-top" aria-label="Back to top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     <!-- jquery library -->
     <script src="vendors/jquery/jquery-2.1.4.min.js"></script>
     <!-- external scripts -->
@@ -606,6 +588,11 @@
     <!-- custom jquery script -->
     <script src="js/jquery.main.js"></script>
     <script src="js/case-study.js"></script>
+    <script>
+    (function(){var nav=document.getElementById('siteNav'),btn=document.getElementById('navToggle');if(!nav||!btn)return;
+    btn.addEventListener('click',function(){var o=nav.classList.toggle('is-open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close menu':'Open menu');});
+    var s=function(){nav.classList.toggle('is-scrolled',window.scrollY>8);};s();window.addEventListener('scroll',s,{passive:true});})();
+    </script>
 </body>
 
 </html>

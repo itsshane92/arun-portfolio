@@ -1,0 +1,73 @@
+/* Case study layout variants — rotated across project pages so each reads as its own story.
+   cs-classic  : centred editorial hero, card highlights (projects 1, 4, 7)
+   cs-index    : split hero, numbered chapters, open stat row (projects 2, 5, 8)
+   cs-spot     : dark spotlight hero panel, wide cover, fact strip (projects 3, 6, 9) */
+
+/* Shared fix: journey step cards (small text was inline, so line-height stretched) */
+.cmp-journey small{display:block;color:#5b6270;font-size:.86rem!important;line-height:1.45!important}
+.cmp-journey strong{line-height:1.3}
+
+/* ---------- B · Index ---------- */
+.cs-index .case-study-hero{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);column-gap:56px;align-items:end;max-width:1140px;margin-bottom:0;padding-bottom:48px;border-bottom:1px solid var(--line);text-align:left!important}
+.cs-index .case-study-hero .case-study-eyebrow{grid-column:1/-1}
+.cs-index .case-study-hero h1{grid-column:1;margin:0;font-size:clamp(2.1rem,3.7vw,3.3rem)}
+.cs-index .case-study-deck{grid-column:2;margin:0;font-size:1.05rem}
+.cs-index .case-study-summary{margin-bottom:56px;padding:32px 15px 0;border:0;border-radius:0;background:none}
+.cs-index .case-study-summary-grid>div{padding-top:16px;border-top:2px solid var(--ink)}
+.cs-index .case-study-impact{margin:0 auto 72px}
+.cs-index .impact-grid{gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cs-index .impact-tile{padding:28px 28px 28px 0;border:0;border-radius:0;background:none}
+.cs-index .impact-tile+.impact-tile{padding-left:28px;border-left:1px solid var(--line)}
+.cs-index .impact-tile em{padding:0;background:none;color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.cs-index .impact-tile strong{color:var(--accent-ink);font-size:clamp(30px,3.2vw,44px)}
+.cs-index .portfolio-gallery{flex-direction:row-reverse}
+.cs-index .portfolio-gallery .v-align-col{margin-left:0;margin-right:8.3333%}
+.cs-index .portfolio-des{counter-reset:chapter}
+.cs-index .portfolio-des h2.text-block-title{counter-increment:chapter;padding-top:22px;border-top:1px solid var(--line)}
+.cs-index .portfolio-des h2.text-block-title:before{content:counter(chapter,decimal-leading-zero);display:block;margin-bottom:10px;color:var(--accent-ink);font-size:14px;font-weight:600;letter-spacing:.08em}
+.cs-index .portfolio-des .cmp-problem h2.text-block-title{padding-top:0;border-top:0}
+.cs-index .portfolio-des .cmp-problem h2.text-block-title:before{color:#c9c3ff}
+.cs-index .portfolio-des .text-block>p{max-width:780px}
+
+/* ---------- C · Spotlight ---------- */
+.cs-spot .cs-band{margin:0 24px 72px;padding:88px 0 56px;border-radius:32px;background:var(--dark)}
+.cs-spot .case-study-hero{max-width:1140px;margin-bottom:48px;text-align:left!important}
+.cs-spot .case-study-hero .case-study-eyebrow{color:#c9c3ff!important}
+.cs-spot .case-study-hero h1{max-width:900px;color:#fff;font-size:clamp(2.3rem,5vw,4.4rem)}
+.cs-spot .case-study-deck{max-width:720px;margin:0;color:#c3c7d2}
+.cs-spot .case-study-summary{margin-bottom:40px;border-color:#2b2f40;background:rgba(255,255,255,.03)}
+.cs-spot .case-study-summary h2{color:#9aa0b0}
+.cs-spot .case-study-summary p{color:#eceef3}
+.cs-spot .case-study-impact{margin:0 auto}
+.cs-spot .case-study-impact .impact-title{color:#9aa0b0}
+.cs-spot .impact-tile{border-color:#2b2f40;background:#171a26}
+.cs-spot .impact-tile em{background:rgba(169,161,255,.14);color:#d4cfff}
+.cs-spot .impact-tile strong{color:#fff}
+.cs-spot .impact-tile span{color:#c3c7d2}
+.cs-spot .impact-note{color:#9aa0b0}
+.cs-spot .portfolio-gallery>[class*="col-lg"]:first-child{flex:0 0 100%;max-width:100%}
+.cs-spot .portfolio-gallery .v-align-col{flex:0 0 100%;max-width:100%;margin:28px 0 0}
+.cs-spot .portfolio-gallery .info-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;margin-bottom:0}
+.cs-spot .portfolio-gallery .info-list li.row{display:block;margin:0;padding:16px 0 0;border-top:2px solid var(--ink)}
+.cs-spot .portfolio-gallery .info-list li .col{padding:0;max-width:none}
+.cs-spot .portfolio-gallery .info-list li p{margin:6px 0 0}
+.cs-spot .portfolio-des h2.text-block-title{font-size:clamp(26px,2.9vw,38px)}
+.cs-spot .portfolio-des h2.text-block-title:before{content:"";display:block;width:36px;height:3px;margin-bottom:18px;border-radius:2px;background:var(--accent)}
+
+@media(max-width:991px){
+  .cs-index .case-study-hero{grid-template-columns:1fr;row-gap:20px}
+  .cs-index .case-study-deck{grid-column:1}
+  .cs-index .portfolio-gallery .v-align-col{margin-right:0}
+  .cs-spot .portfolio-gallery .info-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:767px){
+  .cs-index .impact-grid{border-bottom:0}
+  .cs-index .impact-tile,.cs-index .impact-tile+.impact-tile{padding:20px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .cs-index .case-study-summary{padding:24px 0 0}
+  .cs-spot .cs-band{margin:0 12px 48px;padding:56px 0 32px;border-radius:24px}
+  .cs-spot .case-study-impact{margin:0 16px}
+  .cs-spot .portfolio-gallery .info-list{grid-template-columns:1fr}
+}
+.cs-spot .portfolio-gallery .img-block{display:flex;justify-content:center;padding:32px;border-radius:24px;background:var(--bg-soft)}
+.cs-spot .portfolio-gallery .img-block img{width:auto;max-width:100%;max-height:560px;border-radius:16px}
+@media(max-width:767px){.cs-spot .portfolio-gallery .img-block{padding:16px}}

@@ -1,0 +1,25 @@
+/* High-fidelity visual design galleries for case studies */
+.showcase-section{margin:1rem 0 0}
+.showcase-intro{max-width:760px}
+.showcase-cover{margin:2rem 0 2.5rem}
+.showcase-cover img{display:block;width:100%;border-radius:20px;border:1px solid #e3e7ee;box-shadow:0 24px 60px -24px rgba(15,31,61,.25)}
+.showcase-cover figcaption,.showcase-gallery figcaption{margin-top:.7rem;color:#687080;font-size:.86rem}
+.showcase-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.25rem 0 0;padding:0;list-style:none}
+.showcase-pills li{padding:.35rem .8rem;border-radius:999px;background:#eaf2ff;color:#0a4fcc;font-size:.8rem;font-weight:600}
+.showcase-gallery{display:grid;gap:1.5rem;margin:2rem 0 0;padding:0;list-style:none}
+.showcase-gallery--mobile{grid-template-columns:repeat(4,minmax(0,1fr))}
+.showcase-gallery--desktop{grid-template-columns:repeat(2,minmax(0,1fr))}
+.showcase-gallery figure{margin:0}
+.showcase-gallery a{display:block;border-radius:22px;padding:8px;background:#fff;border:1px solid #e3e7ee;box-shadow:0 16px 40px -24px rgba(15,31,61,.28);transition:transform .2s ease,box-shadow .2s ease}
+.showcase-gallery--desktop a{border-radius:14px;padding:6px}
+.showcase-gallery a:hover,.showcase-gallery a:focus{transform:translateY(-4px);box-shadow:0 22px 50px -24px rgba(15,31,61,.35)}
+.showcase-gallery img{display:block;width:100%;height:auto;border-radius:16px;background:#f5f7fb}
+.showcase-gallery--desktop img{border-radius:10px}
+.showcase-gallery figcaption strong{display:block;color:#1c2024;font-size:.92rem}
+.showcase-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:2rem 0 0}
+.showcase-principles div{padding:1.3rem 1.4rem;border-radius:14px;background:#f5f7fb}
+.showcase-principles strong{display:block;margin-bottom:.35rem;color:#1c2024}
+.showcase-principles p{margin:0;color:#636363;font-size:.92rem}
+@media(max-width:991px){.showcase-gallery--mobile{grid-template-columns:repeat(3,minmax(0,1fr))}.showcase-principles{grid-template-columns:1fr}}
+@media(max-width:767px){.showcase-gallery--mobile{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.showcase-gallery--desktop{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.showcase-gallery a{transition:none}.showcase-gallery a:hover,.showcase-gallery a:focus{transform:none}}
